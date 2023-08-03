@@ -1,0 +1,28 @@
+A<-c(76,35,47,64,95,66,89,36,84,76,35,47,64,95,66,89,36,84)
+B<-c(51,56,84,60,59,70,63,66,50,51,56,84,60,59,70,63,66,50)
+am<-mean(A)
+ame<-median(B)
+range1<-(max(A)-min(A))
+bm<-mean(B)
+bme<-median(B)
+range2<-(max(B)-min(B))
+if(am<bm){
+  print("Class B")
+}else{
+  print("Class A")
+}
+if(ame<bme){
+  print("Class B")
+}else{
+  print("Class A")
+}
+if(range1<range2){
+  print("Class B")
+}else{
+  print("Class A")
+}
+boxplot(A,B)
+
+
+
+

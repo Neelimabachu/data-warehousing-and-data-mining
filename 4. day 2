@@ -1,0 +1,20 @@
+#a
+v=80
+max_val<-100000
+min_val<-50000
+max<-1
+min<-0
+v1<-((v-min_val)/(max_val-min_val))*((max-min)+min)
+v1
+#b
+data<-c(200,300,400,600,1000)
+for( i in data){
+  v1=((i-min(data))/(max(data)-min(data)))*((1-0)+0)
+  print(v1)
+}
+m<-mean(data)
+s<-sd(data)
+for(i in data){
+  v1=(i-m)/s
+  print(v1)
+}
